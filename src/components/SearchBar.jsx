@@ -10,7 +10,7 @@ function SearchBar({ onSearch }) {
   }
 
   function searchInputKeydown(event) {
-    if (event.keyCode == 13) {
+    if (event.keyCode === 13) {
       if (wordToSearch.trim()) onSearch(wordToSearch.trim());
     }
   }
